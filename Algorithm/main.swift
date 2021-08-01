@@ -20,3 +20,5 @@ struct Equation {
         self.n = n
     }
 }
+
+//
