@@ -7,18 +7,14 @@
 
 import Foundation
 
-struct Equation {
-    var x: Double
-    var y: Double
-    var z: Double?
-    var n: Double
+let equation1 = Equation(x: 3, y: 4, n: 5)
+let equation2 = Equation(x: 5, y: 7, n: 5.54)
 
-    init(x: Double, y: Double, z: Double? = nil, n: Double) {
-        self.x = x
-        self.y = y
-        self.z = z
-        self.n = n
-    }
+do {
+    var system = try LinearSystem(equations: (equation1, equation2, nil))
+    print(system.compatibility)
+
+    try SystemSolver.shared.solve(&system, using: .cramer)
+} catch {
+    print(error)
 }
-
-//

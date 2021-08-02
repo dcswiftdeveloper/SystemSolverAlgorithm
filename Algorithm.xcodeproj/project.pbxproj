@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6CB87A3626B6B404003E4C5F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB87A3526B6B404003E4C5F /* main.swift */; };
+		6CB87A3E26B6C061003E4C5F /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB87A3D26B6C061003E4C5F /* Equation.swift */; };
+		6CB87A4026B6C094003E4C5F /* LinearSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB87A3F26B6C094003E4C5F /* LinearSystem.swift */; };
+		6CB87A4226B6C8D5003E4C5F /* SystemSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB87A4126B6C8D5003E4C5F /* SystemSolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		6CB87A3226B6B404003E4C5F /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB87A3526B6B404003E4C5F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6CB87A3D26B6C061003E4C5F /* Equation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		6CB87A3F26B6C094003E4C5F /* LinearSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSystem.swift; sourceTree = "<group>"; };
+		6CB87A4126B6C8D5003E4C5F /* SystemSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				6CB87A3526B6B404003E4C5F /* main.swift */,
+				6CB87A3D26B6C061003E4C5F /* Equation.swift */,
+				6CB87A3F26B6C094003E4C5F /* LinearSystem.swift */,
+				6CB87A4126B6C8D5003E4C5F /* SystemSolver.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -70,6 +79,7 @@
 			buildConfigurationList = 6CB87A3926B6B404003E4C5F /* Build configuration list for PBXNativeTarget "Algorithm" */;
 			buildPhases = (
 				6CB87A2E26B6B404003E4C5F /* Sources */,
+				6CB87A3C26B6BFC6003E4C5F /* SwiftLint */,
 				6CB87A2F26B6B404003E4C5F /* Frameworks */,
 				6CB87A3026B6B404003E4C5F /* CopyFiles */,
 			);
@@ -114,12 +124,36 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CB87A3C26B6BFC6003E4C5F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CB87A2E26B6B404003E4C5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6CB87A3626B6B404003E4C5F /* main.swift in Sources */,
+				6CB87A4226B6C8D5003E4C5F /* SystemSolver.swift in Sources */,
+				6CB87A4026B6C094003E4C5F /* LinearSystem.swift in Sources */,
+				6CB87A3E26B6C061003E4C5F /* Equation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
