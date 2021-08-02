@@ -9,10 +9,10 @@
 import Foundation
 
 struct Equation {
-    var x: Double
-    var y: Double
-    var z: Double?
-    var n: Double
+    let x: Double
+    let y: Double
+    let z: Double?
+    let n: Double
 
     init(x: Double, y: Double, z: Double? = nil, n: Double) {
         self.x = x
